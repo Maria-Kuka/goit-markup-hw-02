@@ -1,0 +1,37 @@
+
+body{
+    background-color: #F5F5F5;
+}
+/* Logo */
+.first-part{
+  color: #2196F3;  
+}
+.second-part{
+    color:#000000 ;
+}
+
+/* Site nav */
+.site-nav{
+    color:#212121 ;
+}
+/* Auth nav */
+.auth-nav{
+    color:#757575  ;
+}
+.site-nav .link:hover, 
+.site-nav .link:focus{
+    color: #2196F3;
+}
+.hero{
+    background-color:  #2F303A ;
+}
+.text{
+    color:#757575 ;
+}
+/* колір заголовків #212121*/
+/*колір тексту #757575*/
+/*веб студіо #2196F3 #000000*/
+/*під фоном #FFFFFF*/
+/*вторинний колір в футері rgba(255, 255, 255, 0.6);*/
+/*колір при навігації #2196F3*/
+/* колір фону #2F303A */
