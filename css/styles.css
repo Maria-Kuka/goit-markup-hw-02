@@ -4,14 +4,12 @@
     --main-color: #212121;
     --second-color: #757575;
     --third-color: #FFFFFF;
+    --fourth-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #212121;
-    background-color: #F5F5F5;
-
-
+    color: var(--main-color);
 }
 
 /* Logo */
@@ -20,7 +18,7 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 1, 20;
+    line-height: calc(31/26);
     letter-spacing: 0.03em;
     color: var(--main-color);
 }
@@ -41,28 +39,28 @@ body {
     text-decoration: none;
 }
 
-.nav-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1, 14;
-    letter-spacing: 0.02em;
-}
-
-.nav-list {
+.site-nav {
     font-weight: 500;
     font-size: 14px;
     line-height: 1, 14;
     letter-spacing: 0.02em;
 
-}
 
+}
 
 .studio-nav-link {
     color: var(--accent-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
 }
 
 .site-nav-link {
-
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
     color: var(--main-color);
 
 }
@@ -100,28 +98,40 @@ body {
     color: var(--third-color);
 }
 
+.hero-name {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60/44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--third-color);
+}
+
 .hero-btn {
-    font-family: 'Roboto';
+    font-family: inherit;
     font-style: normal;
     background-color: var(--accent-color);
     color: var(--third-color);
     ;
     font-weight: 700;
     font-size: 16px;
-    line-height: 1, 87;
+    line-height: calc(30/16);
+    letter-spacing: 0.06em;
     cursor: pointer;
+    border-color: transparent;
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-    background-color: transparent;
+    background-color: #188CE8;
 }
 
 /* Benefits */
 .benefits-list {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1, 14;
+    line-height: calc(16/14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--main-color);
@@ -130,9 +140,8 @@ body {
 
 .text {
     color: var(--second-color);
-    font-weight: 400;
     font-size: 14px;
-    line-height: 1, 71;
+    line-height: calc(24/14);
     letter-spacing: 0.03em;
 
 }
@@ -141,7 +150,7 @@ body {
 .ocupation {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1, 16;
+    line-height: calc(42/36);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color);
@@ -156,7 +165,7 @@ body {
 .team {
     font-weight: 700;
     font-size: 36px;
-    line-height: 1, 16;
+    line-height: calc(42, 19/36);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color);
@@ -166,23 +175,21 @@ body {
 .team-worker {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1, 18;
+    line-height: calc(18, 75/16);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color);
+    background-color: var(--third-color);
 }
 
 
 .team-position {
-    font-weight: 400;
     font-size: 16px;
-    line-height: 1, 18;
-    /* identical to box height */
-
+    line-height: calc(19/16);
     text-align: center;
     letter-spacing: 0.03em;
-
     color: var(--second-color);
+    background-color: var(--third-color);
 }
 
 /* Footer */
@@ -233,14 +240,13 @@ body {
 }
 
 .address-location-link:hover,
-.address-location-link :focus {
-    color: var(--third-color);
+.address-location-link:focus {
+    color: var(--accent-color);
 }
 
 .address-nav-link {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--fourth-color);
     cursor: pointer;
-    font-weight: 400;
     font-size: 14px;
     line-height: calc(24/14);
     letter-spacing: 0.03em;
@@ -250,14 +256,19 @@ body {
 
 .address-nav-link:hover,
 .address-nav-link:focus {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--accent-color);
 }
 
 /* Портфоліо */
 
 .port-nav-link {
     color: var(--accent-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.02em;
 }
+
 
 .btn-port {
     font-family: 'Roboto';
@@ -265,7 +276,9 @@ body {
     font-weight: 500;
     font-size: 16px;
     line-height: calc(26/16);
-    border: none;
+    letter-spacing: 0.03em;
+    border-color: transparent;
+    cursor: pointer;
 }
 
 .btn-port:hover,
@@ -277,17 +290,16 @@ body {
 }
 
 
+
 .project-list {
     font-weight: 700;
     font-size: 18px;
     line-height: calc(36/18);
     letter-spacing: 0.06em;
+    color: var(--main-color)
 }
 
 .project-text {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: calc(30/16);
 
